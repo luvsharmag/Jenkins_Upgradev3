@@ -6,6 +6,7 @@ job('First-Maven-Project-Via-DSL') {
     triggers {
         scm('* * * * *')
     }
+    
     steps {
         maven('clean package', 'maven-samples/single-module/pom.xml')
     }
